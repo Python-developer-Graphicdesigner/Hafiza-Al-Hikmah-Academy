@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://python-developer-graphicdesigner.github.io/Hafiza-Al-Hikmah-Academy/sitemap.xml
