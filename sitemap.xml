@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://python-developer-graphicdesigner.github.io/Hafiza-Al-Hikmah-Academy/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://python-developer-graphicdesigner.github.io/Hafiza-Al-Hikmah-Academy/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Courses Page -->
+  <url>
+    <loc>https://python-developer-graphicdesigner.github.io/Hafiza-Al-Hikmah-Academy/courses.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Enroll Page -->
+  <url>
+    <loc>https://python-developer-graphicdesigner.github.io/Hafiza-Al-Hikmah-Academy/enroll.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Certificates Page -->
+  <url>
+    <loc>https://python-developer-graphicdesigner.github.io/Hafiza-Al-Hikmah-Academy/certificates.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Reviews Page -->
+  <url>
+    <loc>https://python-developer-graphicdesigner.github.io/Hafiza-Al-Hikmah-Academy/reviews.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://python-developer-graphicdesigner.github.io/Hafiza-Al-Hikmah-Academy/contact.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
