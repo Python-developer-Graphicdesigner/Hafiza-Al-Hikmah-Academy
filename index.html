@@ -1872,13 +1872,13 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" required>
+                    <label for="enrollEmail">Email Address</label>
+                    <input type="email" id="enrollEmail" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" required>
+                    <label for="enrollPhone">Phone Number</label>
+                    <input type="tel" id="enrollPhone" required>
                 </div>
                 
                 <div class="form-group">
@@ -2136,13 +2136,13 @@
             }
         });
         
-        // Form submission
+        // Contact Form submission (Inquiry Form)
         document.getElementById('inquiryForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Form validation
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
+            // Contact Form ke apne fields
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
             
             if (!name || !email) {
                 alert('Please fill in all required fields');
@@ -2213,23 +2213,32 @@
             }
         });
         
-        // Enrollment form submission
+        // Enrollment form submission (FIXED - ab ye kaam karega)
         document.getElementById('enrollmentForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Form validation
-            const fullName = document.getElementById('fullName').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
+            // Enrollment Form ke apne fields (different IDs)
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('enrollEmail').value.trim();
+            const phone = document.getElementById('enrollPhone').value.trim();
+            const payment = document.getElementById('paymentMethod').value;
             
-            if (!fullName || !email || !phone) {
+            if (!fullName || !email || !phone || !payment) {
                 alert('Please fill in all required fields');
+                return;
+            }
+            
+            // Email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address');
                 return;
             }
             
             // Process enrollment
             alert('Thank you for your enrollment! We will contact you shortly to complete the process.');
             this.reset();
+            creditCardFields.style.display = 'none';
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
@@ -2305,6 +2314,3 @@
 </body>
 
 </html>
-
-
-
